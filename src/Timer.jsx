@@ -77,7 +77,7 @@ const Stopwatch = ({ initialTime = 120000, initialName = 'Timer 1' }) => {
         onNameChange={setTimerName}
 
       />
-      <div className=" mr-32">
+      <div className=" mr-16">
           <Notstarted progress={progress} isRunning={running} />
         </div>
       
