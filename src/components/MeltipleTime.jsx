@@ -15,12 +15,11 @@ function TimerApp() {
     }]);
   };
 
-  // Determine scale based on number of timers
   const getTimerScale = () => {
     if (timers.length === 1) {
-      return 'scale-100'; // Medium size for single timer
+      return 'scale-100'; 
     }
-    return 'scale-75'; // Smaller size for multiple timers
+    return 'scale-75'; 
   };
 
   return (

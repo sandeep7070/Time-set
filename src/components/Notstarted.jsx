@@ -8,7 +8,6 @@ function Notstarted({ progress}) {
       <div className="flex items-center justify-between mb-2">
         <span className="text-white font-medium">{status}</span>
         
-        {/* <span className="text-white">{Math.round(progress)}</span> */}
       </div>
       
       <div className="w-full bg-rounded-full h-2.5">

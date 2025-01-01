@@ -1,4 +1,4 @@
-// Stopwatch.jsx
+
 import React, { useState, useEffect } from 'react';
 import MainEdit from './components/MainEdit';
 import Notstarted from './components/Notstarted';
@@ -7,7 +7,6 @@ const Stopwatch = ({ initialTime = 120000, initialName = 'Timer 1' }) => {
   const [time, setTime] = useState(initialTime);
   const [running, setRunning] = useState(false);
   const [timerName, setTimerName] = useState(initialName);
-  // const [timerName, setTimerName] = useState(initialName);
   const [progress, setProgress] = useState(100);
 
   useEffect(() => {
@@ -16,7 +15,6 @@ const Stopwatch = ({ initialTime = 120000, initialName = 'Timer 1' }) => {
       interval = setInterval(() => {
         setTime((prevTime) => {
           const newTime = prevTime <= 1000 ? 0 : prevTime - 1000;
-          // Calculate progress based on remaining time
           setProgress((newTime / initialTime) * 100);
           if (newTime === 0) {
             setRunning(false);
